@@ -6,9 +6,12 @@ triangle(1,5,80,2,9,20); //Triangle (trois points)
 quad(25,25,75,25,75,75,25,75); //Quadrilatère (quatre points)
 //La superposition des éléments dépend de l'ordre dans le script
 
-//Pour des polygones
+//Polygones
 beginShape(); //Démarrage de la forme
 vertex(400, 400); //1er point
 vertex(400, 450); //2e point
 vertex(200, 300); //3e point
 endShape(CLOSE); //Fin de la forme, l'argument CLOSE permettant la fermeture automatique
+
+//Rectangles
+rect(200, 300, 100, 200);//Arguments : coordonnées X/Y du point haut-gauche, largeur, hauteur du rectangle 
