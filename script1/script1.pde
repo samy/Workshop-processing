@@ -3,7 +3,7 @@ background(#FF000F); //Couleur de fond en RGB
 
 point (50, 50); //Point
 
-stroke(#0000FF); //Couleur de trait
+stroke(#0000FF); //Couleur de trait (en hexadecimal, numérique niveaux de gris, ou RGB)
 fill(#FFFF00); //Couleur de remplissage
 line (0, 100, 100, 0); //Ligne (deux points)
 triangle(1, 5, 80, 2, 9, 20); //Triangle (trois points)
@@ -11,7 +11,8 @@ quad(25, 25, 75, 25, 75, 75, 25, 75); //Quadrilatère (quatre points)
 //La superposition des éléments dépend de l'ordre dans le script
 
 //Polygones
-stroke(#FF00FF); //Couleur de trait
+stroke(#FF00FF); //Couleur de trait 
+strokeWeight(20); //Largeur du trait en pixels
 fill(#CCCCCC, 150); //Couleur de remplissage, avec opacité partielle (entre 0 et 255)
 beginShape(); //Démarrage de la forme
 vertex(400, 400); //1er point
