@@ -19,7 +19,7 @@ void draw() //
   //Si on a dépassé la hauteur de l'écran ("height")
   if (yPos > height) {
     xPos = 0; //On remet la position sur l'axe X à 0
-    yPos = 0;
+    yPos = 0; //On remet la position sur l'axe Y à 0
     background(#CCCCCC);
   }
   rect(xPos, yPos, 20, 20);
