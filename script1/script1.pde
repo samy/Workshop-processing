@@ -1,13 +1,18 @@
-size(600,600); //Indication de la taille globale du canvas
-background(255,255,0); //Couleur de fond en RGB
+size(600, 600); //Indication de la taille globale du canvas
+background(#FF000F); //Couleur de fond en RGB
 
 point (50, 50); //Point
-line (0,100,100,0); //Ligne (deux points)
-triangle(1,5,80,2,9,20); //Triangle (trois points)
-quad(25,25,75,25,75,75,25,75); //Quadrilatère (quatre points)
+
+stroke(#0000FF); //Couleur de trait
+fill(#FFFF00); //Couleur de remplissage
+line (0, 100, 100, 0); //Ligne (deux points)
+triangle(1, 5, 80, 2, 9, 20); //Triangle (trois points)
+quad(25, 25, 75, 25, 75, 75, 25, 75); //Quadrilatère (quatre points)
 //La superposition des éléments dépend de l'ordre dans le script
 
 //Polygones
+stroke(#FF00FF); //Couleur de trait
+fill(#CCCCCC, 150); //Couleur de remplissage, avec opacité partielle (entre 0 et 255)
 beginShape(); //Démarrage de la forme
 vertex(400, 400); //1er point
 vertex(400, 450); //2e point
