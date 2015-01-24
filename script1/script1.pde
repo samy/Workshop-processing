@@ -14,4 +14,7 @@ vertex(200, 300); //3e point
 endShape(CLOSE); //Fin de la forme, l'argument CLOSE permettant la fermeture automatique
 
 //Rectangles
-rect(200, 300, 100, 200);//Arguments : coordonnées X/Y du point haut-gauche, largeur, hauteur du rectangle 
+rect(200, 300, 100, 200);//Arguments : coordonnées X/Y du point haut-gauche, largeur, hauteur du rectangle
+
+//Ellipses
+ellipse(100, 500, 35, 35); //Arguments : coordonnées X/Y du centre, largeur, hauteur de l'ellipse
