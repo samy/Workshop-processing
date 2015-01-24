@@ -15,7 +15,9 @@ void draw() {
   {
     float distanceSouris = dist(mouseX, mouseY, pmouseX, pmouseY); //On calcule la distance entre les coordonnées actuelles de la souris et les précédentes
     int compteur = 0;
-    while (compteur < 30)
+    float nbreRepet = random(5,30);
+    
+    while (compteur < nbreRepet)
     {
       //image(monImage, width/2, height/2); // Méthode pour afficher l'image (mais elle est de toute façon chargée en mémoire)
       int posX = (int)(mouseX + random(-distanceSouris, distanceSouris)); //On stocke une valeur aléatoire de X
@@ -28,5 +30,14 @@ void draw() {
       compteur += 1;
     }
   }
+}
+
+void keyPressed() //Dans le cas d'une pression de touche
+{
+   if (key =='b') { //Si on a appuyé sur b
+     background(255); //On change le fond
+   } else if (key == 's') { //Si on a appuyé sur S
+      saveFrame("export###.png"); //On exporte le canvas vers un PNG, avec le # comme caractère générique remplacé par le n° de frame
+   } 
 }
 
