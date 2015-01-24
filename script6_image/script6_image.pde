@@ -1,5 +1,6 @@
 PImage monImage; //Variable de type image
 color maCouleur;
+int nbreTypos;
 
 void setup()
 {
@@ -7,13 +8,18 @@ void setup()
   monImage = loadImage("photo.jpg");
   imageMode(CENTER);
   monImage.resize(width, height);
+  nbreTypos = PFont.list().length;
   noStroke();
+  textAlign(CENTER, CENTER);
 }
 void draw() {
   //background(#CCCCCC);
   if (mousePressed) //Seulement si le bouton de la souris est pressé
   {
     float distanceSouris = dist(mouseX, mouseY, pmouseX, pmouseY); //On calcule la distance entre les coordonnées actuelles de la souris et les précédentes
+    PFont maFonte = createFont(PFont.list()[(int)random(nbreTypos)], constrain(distanceSouris, 2, 180));
+    textFont(maFonte);
+    
     int compteur = 0;
     float nbreRepet = random(5,30);
     
