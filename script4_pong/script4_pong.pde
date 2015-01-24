@@ -43,10 +43,6 @@ void draw()
   }
 
   text("Score : " + score + " points", 200, 30);
-
-
-
-
   fill(#CCCCCC);
   rectMode(CENTER);
   rect(mouseX, raquetteY, rectWidth, rectHeight);
