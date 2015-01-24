@@ -1,4 +1,5 @@
 size(600,600); //Indication de la taille globale du canvas
+background(255,255,0); //Couleur de fond en RGB
 
 point (50, 50); //Point
 line (0,100,100,0); //Ligne (deux points)
