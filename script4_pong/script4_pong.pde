@@ -18,7 +18,6 @@ void setup()
 
 void draw()
 {
-  background(#FFFFFF);
   //Création de la balle
   background(150, 39, 18);
   ellipse(ballX, ballY, ballSize, ballSize);
